@@ -2,7 +2,7 @@ import { experienceData } from "@/data/experience";
 
 export function Experience() {
   return (
-    <section className="py-12">
+    <section id="experience" className="py-12 scroll-mt-20">
       <h2 className="text-3xl font-bold mb-8">Experience</h2>
       <div className="space-y-8">
         {experienceData.map((item) => (

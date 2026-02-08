@@ -2,7 +2,7 @@ import { educationData } from "@/data/education";
 
 export function Education() {
   return (
-    <section className="py-12">
+    <section id="education" className="py-12 scroll-mt-20">
       <h2 className="text-3xl font-bold mb-8">Education</h2>
       <div className="space-y-8">
         {educationData.map((item) => (
