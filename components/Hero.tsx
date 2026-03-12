@@ -26,7 +26,7 @@ export function Hero() {
           
           <FadeIn delay={400}>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-              A passionate developer building <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">minimal</span> and <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">accessible</span> web experiences.
+             Backend developer building reliable and secure backend systems with <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">TypeScript</span>, <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">NodeJS</span>, and <span className="text-foreground font-medium underline decoration-primary decoration-2 underline-offset-4">NestJS</span>.
             </p>
           </FadeIn>
 
