@@ -1,16 +1,18 @@
 "use client";
-
+import { FadeIn } from "./FadeIn";
 import Image from "next/image";
 
 export function About() {
   return (
-    <section id="about" className="max-w-[900px] mx-auto py-[100px]">
-      <h2 className="flex items-center text-slate-lightest text-[32px] font-semibold whitespace-nowrap mb-10 w-full
-        before:content-['01.'] before:relative before:bottom-1 before:text-primary before:font-mono before:text-xl before:mr-2 before:font-normal
-        after:content-[''] after:block after:relative after:top-1 after:w-full after:h-[1px] after:ml-5 after:bg-navy-lightest">
-        About Me
-      </h2>
 
+    <section id="about" className="max-w-[900px] mx-auto py-[100px]">
+      <FadeIn delay={100}>
+        <h2 className="flex items-center text-slate-lightest text-[32px] font-semibold whitespace-nowrap mb-10 w-full
+          before:content-['01.'] before:relative before:bottom-1 before:text-primary before:font-mono before:text-xl before:mr-2 before:font-normal
+          after:content-[''] after:block after:relative after:top-1 after:w-full after:h-[1px] after:ml-5 after:bg-navy-lightest">
+          About Me
+        </h2>
+      </FadeIn>
       <div className="flex flex-col md:flex-row gap-12">
         <div className="md:w-3/5 text-slate text-lg space-y-4">
           <p>

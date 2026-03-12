@@ -29,7 +29,7 @@ export function Header() {
   const navLinks = [
     { name: "About", url: "/#about", id: "about" },
     { name: "Experience", url: "/#experience", id: "experience" },
-    { name: "Work", url: "/#work", id: "work" },
+    { name: "Education", url: "/#work", id: "work" },
     { name: "Contact", url: "/#contact", id: "contact" },
   ];
 
