@@ -16,7 +16,7 @@ export function Header() {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       setIsScrolled(currentScrollPos > 50);
-      
+
       // Hide header when scrolling down, show when scrolling up
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 50);
       setPrevScrollPos(currentScrollPos);
@@ -29,7 +29,7 @@ export function Header() {
   const navLinks = [
     { name: "About", url: "/#about", id: "about" },
     { name: "Experience", url: "/#experience", id: "experience" },
-    { name: "Education", url: "/#work", id: "work" },
+    { name: "Education", url: "/#education", id: "education" },
     { name: "Contact", url: "/#contact", id: "contact" },
   ];
 
@@ -46,23 +46,23 @@ export function Header() {
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 px-6 md:px-12 h-[100px] flex items-center justify-between
         ${isScrolled ? "h-[70px] bg-navy/85 shadow-lg backdrop-blur-sm" : ""}
         ${visible ? "translate-y-0" : "-translate-y-full"}
       `}
     >
       <div className="flex items-center">
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           onClick={(e) => scrollToSection(e, "top")}
           className="text-primary hover:bg-green-tint rounded-full p-2 transition-colors duration-300"
           aria-label="home"
         >
           <div className="w-10 h-10 border-2 border-primary rounded-lg flex items-center justify-center relative transform rotate-45 group">
-             <span className="font-mono text-xl font-bold text-primary transform -rotate-45 group-hover:-translate-y-1 transition-transform">
-               F
-             </span>
+            <span className="font-mono text-xl font-bold text-primary transform -rotate-45 group-hover:-translate-y-1 transition-transform">
+              F
+            </span>
           </div>
         </Link>
       </div>
@@ -71,7 +71,7 @@ export function Header() {
         <ol className="flex justify-between items-center p-0 m-0 list-none text-slate-light text-[13px] font-mono">
           {navLinks.map((link, i) => (
             <li key={i} className="relative mx-3">
-              <Link 
+              <Link
                 href={link.url}
                 onClick={(e) => scrollToSection(e, link.id)}
                 className="p-2 transition-colors hover:text-primary group flex items-center gap-1"
@@ -81,25 +81,25 @@ export function Header() {
             </li>
           ))}
         </ol>
-        
-        <a 
-          href="/resume.pdf" 
-          target="_blank" 
+
+        <a
+          href="/resume.pdf"
+          target="_blank"
           rel="noopener noreferrer"
           className="text-primary bg-transparent border border-primary rounded px-4 py-2 font-mono text-[13px] hover:bg-green-tint transition-colors ml-4"
         >
           Resume
         </a>
       </div>
-      
+
       {/* Mobile Menu Icon Placeholder */}
       <div className="md:hidden text-primary">
-         {/* Hamburger Icon */}
-         <svg viewBox="0 0 100 80" width="30" height="30" className="fill-current">
-            <rect width="100" height="10" rx="5"></rect>
-            <rect y="30" width="100" height="10" rx="5"></rect>
-            <rect y="60" width="100" height="10" rx="5"></rect>
-         </svg>
+        {/* Hamburger Icon */}
+        <svg viewBox="0 0 100 80" width="30" height="30" className="fill-current">
+          <rect width="100" height="10" rx="5"></rect>
+          <rect y="30" width="100" height="10" rx="5"></rect>
+          <rect y="60" width="100" height="10" rx="5"></rect>
+        </svg>
       </div>
     </header>
   );

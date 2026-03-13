@@ -36,20 +36,19 @@ export function About() {
 
         <div className="md:w-2/5 flex justify-center">
           <div className="relative w-full max-w-[300px] aspect-square rounded group">
-             {/* Abstract frame effect */}
-             <div className="absolute inset-0 border-2 border-primary rounded translate-x-5 translate-y-5 transition-transform duration-300 group-hover:translate-x-4 group-hover:translate-y-4 -z-10"></div>
-             
-             {/* Image container w/ tint */}
-             <div className="relative w-full h-full rounded bg-primary overflow-hidden transition-all duration-300">
-               <Image
-                 src="/FK.png"
-                 alt="Franz Khyl Ong"
-                 fill
-                 sizes="(max-width: 768px) 100vw, 300px"
-                 className="object-cover mix-blend-multiply grayscale contrast-125 transition-all duration-300 group-hover:mix-blend-normal group-hover:grayscale-0"
-               />
-               <div className="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors duration-300"></div>
-             </div>
+            {/* Abstract frame effect */}
+            <div className="absolute inset-0 border-2 border-primary rounded translate-x-5 translate-y-5 transition-transform duration-300 group-hover:translate-x-4 group-hover:translate-y-4 -z-10"></div>
+
+            {/* Image container */}
+            <div className="relative w-full h-full rounded overflow-hidden transition-all duration-300">
+              <Image
+                src="/portrait.png"
+                alt="Franz Khyl Ong"
+                fill
+                sizes="(max-width: 768px) 100vw, 300px"
+                className="object-cover transition-all duration-300"
+              />
+            </div>
           </div>
         </div>
       </div>
