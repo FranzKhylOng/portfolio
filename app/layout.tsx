@@ -16,8 +16,8 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Brittany Chiang | Software Engineer",
-  description: "Brittany Chiang is a software engineer who builds exceptional digital experiences.",
+  title: "Franz Khyl Ong | Software Engineer",
+  description: "Franz Khyl Ong is a software engineer who builds reliable backend systems.",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Header />
-        
+
         <SocialSidebar />
         <EmailSidebar />
 
