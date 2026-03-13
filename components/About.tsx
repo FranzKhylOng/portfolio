@@ -35,6 +35,7 @@ export function About() {
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-primary leading-tight">TypeScript</li>
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-primary leading-tight">Node.js</li>
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-primary leading-tight">NestJS</li>
+            <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-primary leading-tight">GraphQL</li>
             <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-primary leading-tight">MongoDB</li>
           </ul>
         </div>
